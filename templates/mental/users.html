@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Users</title>
+</head>
+<body>
+    {% if user_list %}
+        <ul>
+            {% for user in user_list %}
+            <li>User: {{ user.name }}, Email: {{ user.email }}, Voltage: {{ user.voltage }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <strong>There are no events.</strong>
+    {% endif %}
+</body>
+</html>
