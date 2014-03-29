@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65692abb-4482-4786-a08c-ff0db0727365" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental_health/settings.py" afterPath="$PROJECT_DIR$/mental_health/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mental/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental_health/urls.py" afterPath="$PROJECT_DIR$/mental_health/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental_health.iws" />
@@ -26,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mental_health/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="38" selection-start="519" selection-end="519" vertical-scroll-proportion="0.1824687" vertical-offset="221" max-vertical-offset="1666">
+            <state line="45" column="30" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1666">
               <folding />
             </state>
           </provider>
@@ -38,9 +39,20 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mental_health/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+            <state line="11" column="45" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mental/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="42" selection-start="164" selection-end="164" vertical-scroll-proportion="0.21288015" vertical-offset="0" max-vertical-offset="559">
+              <folding>
+                <element signature="e#21#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,6 +81,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/mental_health/settings.py" />
+        <option value="$PROJECT_DIR$/mental_health/urls.py" />
+        <option value="$PROJECT_DIR$/mental/urls.py" />
       </list>
     </option>
   </component>
@@ -401,7 +415,11 @@
       <created>1396131003270</created>
       <updated>1396131003270</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="configured settings and path names">
+      <created>1396131174194</created>
+      <updated>1396131174194</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -419,7 +437,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -443,21 +461,13 @@
     </option>
     <MESSAGE value="first commit" />
     <MESSAGE value="changed name of app" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed name of app" />
+    <MESSAGE value="configured settings and path names" />
+    <option name="LAST_COMMIT_MESSAGE" value="configured settings and path names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mental_health/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mental/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
@@ -467,8 +477,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mental_health/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="38" selection-start="519" selection-end="519" vertical-scroll-proportion="0.1824687" vertical-offset="221" max-vertical-offset="1666">
+        <state line="45" column="30" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1666">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mental_health/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="45" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mental/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="42" selection-start="164" selection-end="164" vertical-scroll-proportion="0.21288015" vertical-offset="0" max-vertical-offset="559">
+          <folding>
+            <element signature="e#21#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
