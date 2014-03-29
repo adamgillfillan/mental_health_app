@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65692abb-4482-4786-a08c-ff0db0727365" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/mental/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental/views.py" afterPath="$PROJECT_DIR$/mental/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental/models.py" afterPath="$PROJECT_DIR$/mental/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental_health.iws" />
@@ -58,13 +57,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mental/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="37" selection-start="272" selection-end="272" vertical-scroll-proportion="0.44868034" vertical-offset="0" max-vertical-offset="341">
+            <state line="9" column="37" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mental/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.48022598" vertical-offset="0" max-vertical-offset="354">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,6 +95,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -96,6 +109,7 @@
         <option value="$PROJECT_DIR$/mental/urls.py" />
         <option value="$PROJECT_DIR$/templates/mental/index.html" />
         <option value="$PROJECT_DIR$/mental/views.py" />
+        <option value="$PROJECT_DIR$/mental/models.py" />
       </list>
     </option>
   </component>
@@ -463,7 +477,11 @@
       <created>1396131404893</created>
       <updated>1396131404893</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="index view working">
+      <created>1396131565861</created>
+      <updated>1396131565861</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -508,7 +526,8 @@
     <MESSAGE value="configured settings and path names" />
     <MESSAGE value="added urls" />
     <MESSAGE value="added first view" />
-    <option name="LAST_COMMIT_MESSAGE" value="added first view" />
+    <MESSAGE value="index view working" />
+    <option name="LAST_COMMIT_MESSAGE" value="index view working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -548,10 +567,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mental/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="37" selection-start="272" selection-end="272" vertical-scroll-proportion="0.44868034" vertical-offset="0" max-vertical-offset="341">
+        <state line="9" column="37" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mental/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.48022598" vertical-offset="0" max-vertical-offset="354">
+          <folding />
         </state>
       </provider>
     </entry>
