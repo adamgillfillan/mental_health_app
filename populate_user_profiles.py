@@ -17,7 +17,7 @@ def add_voltage(voltage, user, time):
 
 def add_many_voltages(user):
     x = random.randrange(100)
-    seconds = random.randrange(1000)
+    seconds = random.randrange(100000, 100000000)
 
     new_time = 1000 * seconds
     new_voltage = add_voltage(x, user, new_time)
