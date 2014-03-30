@@ -10,14 +10,14 @@
 
 </head>
 <body>
-    {% if user_list %}
+    {% if voltage_list %}
         <ul>
-            {% for user in user_list %}
-            <li>User: {{ user.name }}, Email: {{ user.email }}</li>
+            {% for voltage in voltage_list %}
+            <li>Voltage: {{ voltage.voltage}}, Username: {{ voltage.user.name}}, Email: {{ voltage.user.email }}</li>
             {% endfor %}
         </ul>
     {% else %}
-        <strong>There are no users.</strong>
+        <strong>There are no voltages.</strong>
     {% endif %}
 </body>
 </html>
