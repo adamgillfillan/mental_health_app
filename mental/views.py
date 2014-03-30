@@ -38,6 +38,10 @@ def get_voltage_list():
     voltage_list = Voltage.objects.all()
     return voltage_list
 
+def addvoltages(request):
+    if (request.meathod == "POST"):
+        print(request.data)
+
 
 def user(request):
     context = RequestContext(request)
