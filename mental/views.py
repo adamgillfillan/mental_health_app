@@ -54,14 +54,9 @@ def user(request, user_name_url):
 
     my_user = UserProfile.objects.get(name=user_name)
     voltages = Voltage.objects.filter(user=my_user)
-    voltages_list = voltages#voltages.order_by('voltages')
-    #voltages_list = get_voltage_list()
+    voltages_list = voltages
 
-    # Adds our results list to the template context under name pages.
     context_dict['voltages'] = voltages_list
-
-    # We also add the category object from the database to the context dictionary.
-    # We'll use this in the template to verify that the category exists.
     context_dict['user'] = my_user
 
     # Go render the response and return it to the client.
