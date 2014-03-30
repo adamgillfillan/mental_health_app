@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65692abb-4482-4786-a08c-ff0db0727365" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental_health.db" afterPath="$PROJECT_DIR$/mental_health.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental/urls.py" afterPath="$PROJECT_DIR$/mental/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental/views.py" afterPath="$PROJECT_DIR$/mental/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental_health.iws" />
@@ -725,7 +722,11 @@
       <created>1396156062432</created>
       <updated>1396156062432</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;mental/views.py&#10;">
+      <created>1396160513705</created>
+      <updated>1396160513705</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
