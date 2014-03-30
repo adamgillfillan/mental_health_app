@@ -15,4 +15,29 @@ body{
 	background-attachement: fixed;
 }
 
+table{
 
+	margin-left: 10%;
+	margin-top: 5%;
+	
+}
+
+.one-edge-shadow{
+
+	-webkit-box-shadow: 0 8px 6px -6px #000;
+	-moz-box-shadow: 0 8px 6px -6px #000;
+	box-shadow: 0 8px 6px -6px black;
+
+}
+
+#content{
+
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5%;
+	margin-bottom: 20%;
+	background: #FFF;
+	color: #000;
+	border: 3px solid #191970;
+	padding: 2%;
+}
