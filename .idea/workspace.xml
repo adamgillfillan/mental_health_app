@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65692abb-4482-4786-a08c-ff0db0727365" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mental_health.db" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental/models.py" afterPath="$PROJECT_DIR$/mental/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite.log" afterPath="$PROJECT_DIR$/mysite.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate_user_profiles.py" afterPath="$PROJECT_DIR$/populate_user_profiles.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/mental/user.html" afterPath="$PROJECT_DIR$/templates/mental/user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental/views.py" afterPath="$PROJECT_DIR$/mental/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental_health.iws" />
@@ -17,7 +19,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/mental_health$populate_user_profiles.coverage" NAME="populate_user_profiles Coverage Results" MODIFIED="1396173786071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mental_health$populate_user_profiles.coverage" NAME="populate_user_profiles Coverage Results" MODIFIED="1396185672738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -31,6 +33,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="populate_user_profiles.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/populate_user_profiles.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="30" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0" vertical-offset="643" max-vertical-offset="1088">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mental_health/settings.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,7 +54,7 @@
       <file leaf-file-name="user.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/mental/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="16" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.8073879" vertical-offset="595" max-vertical-offset="1394">
+            <state line="48" column="16" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.302799" vertical-offset="697" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
@@ -96,15 +107,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mental/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="client.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mental/client.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,7 +119,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mental/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="33" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+            <state line="12" column="32" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
@@ -147,20 +149,21 @@
         <option value="$PROJECT_DIR$/mental/urls.py" />
         <option value="$PROJECT_DIR$/templates/mental/index.html" />
         <option value="$PROJECT_DIR$/templates/mental/voltages.html" />
-        <option value="$PROJECT_DIR$/populate_user_profiles.py" />
         <option value="$PROJECT_DIR$/mental_health/settings.py" />
-        <option value="$PROJECT_DIR$/mental/models.py" />
         <option value="$PROJECT_DIR$/static/nvd3/nv.d3.min.js" />
         <option value="$PROJECT_DIR$/static/nvd3/nv.d3.min.css" />
         <option value="$PROJECT_DIR$/mental/views.py" />
+        <option value="$PROJECT_DIR$/mental/models.py" />
+        <option value="$PROJECT_DIR$/populate_user_profiles.py" />
         <option value="$PROJECT_DIR$/templates/mental/user.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="683" />
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -752,11 +755,15 @@
       <created>1396179786257</created>
       <updated>1396179786257</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="adding chart">
+      <created>1396183423991</created>
+      <updated>1396183423991</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="0" width="683" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -770,8 +777,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14381272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12764351" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23289903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1076,13 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/populate_user_profiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mental/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="331">
@@ -1135,13 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mental/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/d3/d3.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="40" selection-start="128204" selection-end="128204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
@@ -1186,9 +1179,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/populate_user_profiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="30" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0" vertical-offset="643" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mental/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="32" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mental/user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="16" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.8073879" vertical-offset="595" max-vertical-offset="1394">
+        <state line="48" column="16" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.302799" vertical-offset="697" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
