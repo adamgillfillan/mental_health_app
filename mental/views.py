@@ -37,3 +37,7 @@ def get_user_list():
 def get_voltage_list():
     voltage_list = Voltage.objects.all()
     return voltage_list
+
+def addvoltage(request):
+    if request.meathod == "POST":
+        print (request.data)
