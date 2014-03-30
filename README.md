@@ -1,3 +1,3 @@
 mental_health_app
 =================
-![alt tag](https://github.com/adamgillfillan/mental_health_app/blob/master/logo-mhv.png)
+![alt tag](https://raw.githubusercontent.com/adamgillfillan/mental_health_app/master/logo-mhv.png)
