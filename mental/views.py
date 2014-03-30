@@ -53,6 +53,7 @@ def addvoltages(request):
         v.save()
     return HttpResponse('Data added')
 
+
 #
 # def user(request, user_name_url):
 #     context = RequestContext(request)
