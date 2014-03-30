@@ -11,37 +11,130 @@
 <head>
     <title></title>
 </head>
+<style>
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+</style>
 <body>
     <h1>{{ user_name }}</h1>
-    <script>/*These lines are all chart setup.  Pick and choose which chart features you want to utilize. */
-nv.addGraph(function() {
-  var chart = nv.models.lineChart()
-                .margin({left: 100})  //Adjust chart margins to give the x-axis some breathing room.
-                .useInteractiveGuideline(true)  //We want nice looking tooltips and a guideline!
-                .transitionDuration(350)  //how fast do you want the lines to transition?
-                //.showLegend(true)       //Show the legend, allowing users to turn on/off line series.
-                //.showYAxis(true)        //Show the y-axis
-                //.showXAxis(true)        //Show the x-axis
-  ;
-  chart.xAxis     //Chart x-axis settings
-      .axisLabel('Date');
+<script>
 
-  chart.yAxis     //Chart y-axis settings
-      .axisLabel('Voltage (v)');
-      //.tickFormat(d3.format('.02f'));
-  var myData = create_voltages();   //You need data...
+    var margin = {top: 20, right: 20, bottom: 30, left: 50},
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
 
-  d3.select('#chart')    //Select the <svg> element you want to render the chart in.
-      .datum(myData)         //Populate the <svg> element with chart data...
-      .call(chart);          //Finally, render the chart!
 
-  //Update the chart when window resizes.
-  //nv.utils.windowResize(function() { chart.update() });
-  return chart;
-});
-/**************************************
- * Simple test data generator
- */
+    var x = d3.scale.linear()
+        .range([0, width]);
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+
+    var line = d3.svg.line()
+        .x(function(d) { return x(d.x); })
+        .y(function(d) { return y(d.y); });
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var myData = create_voltages();
+    x.domain(d3.extent(myData, function(d) { return d.x; }));
+    y.domain(d3.extent(myData, function(d) { return d.y; }));
+
+      svg.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(xAxis)
+              .append("text")
+              .attr("y", 50)
+              .attr("x", 400)
+              .text("Time (ms)");
+
+      svg.append("g")
+          .attr("class", "y axis")
+          .call(yAxis)
+        .append("text")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 6)
+          .attr("dy", ".71em")
+          .style("text-anchor", "end")
+          .text("Voltage");
+
+      svg.append("path")
+          .datum(myData)
+          .attr("class", "line")
+          .attr("d", line);
+
+    function create_voltages() {
+        var my_voltages = [];
+        {% for voltage in voltages %}
+            my_voltages.push({
+                x: {{ voltage.time }},
+                y: {{ voltage.voltage }}
+            });
+        {% endfor %}
+        return my_voltages
+    }
+</script>
+{#    <script>/*These lines are all chart setup.  Pick and choose which chart features you want to utilize. */#}
+{#nv.addGraph(function() {#}
+{#  var chart = nv.models.lineChart()#}
+{#                .margin({left: 100})  //Adjust chart margins to give the x-axis some breathing room.#}
+{#                .useInteractiveGuideline(true)  //We want nice looking tooltips and a guideline!#}
+{#                .transitionDuration(350)  //how fast do you want the lines to transition?#}
+{#                //.showLegend(true)       //Show the legend, allowing users to turn on/off line series.#}
+{#                //.showYAxis(true)        //Show the y-axis#}
+{#                //.showXAxis(true)        //Show the x-axis#}
+{#  ;#}
+{#  chart.xAxis     //Chart x-axis settings#}
+{#      .axisLabel('Date');#}
+{##}
+{#  chart.yAxis     //Chart y-axis settings#}
+{#      .axisLabel('Voltage (v)');#}
+{#      //.tickFormat(d3.format('.02f'));#}
+{#  var myData = create_voltages();   //You need data...#}
+{##}
+{#  d3.select('#chart')    //Select the <svg> element you want to render the chart in.#}
+{#      .datum(myData)         //Populate the <svg> element with chart data...#}
+{#      .call(chart);          //Finally, render the chart!#}
+
+{#  //Update the chart when window resizes.#}
+{#  //nv.utils.windowResize(function() { chart.update() });#}
+{#  return chart;#}
+{#});#}
+{#/**************************************#}
+{# * Simple test data generator#}
+{# */#}
+{% comment %}
 function create_voltages() {
     var my_voltages = [];
     {% for voltage in voltages %}
@@ -51,15 +144,17 @@ function create_voltages() {
         });
     {% endfor %}
 
-    return [
-    {
-      values: my_voltages,      //values - represents the array of {x,y} data points
-      key: 'My Voltages', //key  - the name of the series.
-      color: '#ff7f0e'  //color - optional: choose your own line color.
-    }
-    ];
-};
-    </script>
+{% endcomment %}
+{#    return [#}
+{#    {#}
+{#      values: my_voltages,      //values - represents the array of {x,y} data points#}
+{#      key: 'My Voltages', //key  - the name of the series.#}
+{#      color: '#ff7f0e'  //color - optional: choose your own line color.#}
+{#    }#}
+{#    ];#}
+{#};#}
+{#    #}
+{#    </script>#}
     <div id="chart"></div>
     {% if voltages %}
     <ul>
