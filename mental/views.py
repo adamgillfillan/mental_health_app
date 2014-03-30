@@ -39,14 +39,10 @@ def get_voltage_list():
     return voltage_list
 
 
-def user(request, user_name_url):
+def user(request):
     context = RequestContext(request)
-
-    user_name = user_name_url.replace('_', ' ')
-    context_dict = {'user_name': user_name,
-                    'user_name_url': user_name_url}
     user_list = get_user_list()
-    context_dict['user_list'] = user_list
+    context_dict = {'user_list': user_list}
 
     try:
         my_user = UserProfile.objects.get(name=user_name)
