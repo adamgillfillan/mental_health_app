@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from mental.models import UserProfile, Voltage
+from django.http import HttpResponse
+
+
+# import the logging library
 
 
 # Create your views here.
@@ -38,11 +42,14 @@ def get_voltage_list():
     voltage_list = Voltage.objects.all()
     return voltage_list
 
+
 def addvoltages(request):
-    if (request.meathod == "POST"):
-        print(request.data)
-
-
+    if (request.method == "POST"):
+        print(request.POST)
+        v = Voltage(voltage = request.POST['voltages'], user = get_user_list()[0])
+        v.save()
+    return HttpResponse('Data added')
+        
 def user(request, user_name_url):
     context = RequestContext(request)
 
