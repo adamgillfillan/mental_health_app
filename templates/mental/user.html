@@ -114,6 +114,15 @@ button{
     }
 
 
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url, false);
+    xhr.onload = // something
+    document.getElementById("clearButton").addEventListener("click",
+      function() {xhr.send(data)},
+      false
+);
+
+
 
 </script>
 {#    <script>/*These lines are all chart setup.  Pick and choose which chart features you want to utilize. */#}
@@ -176,7 +185,9 @@ function create_voltages() {
 {#    {% else %}#}
 {#        <strong>No voltages currently in category.</strong>#}
 {#    {% endif %}#}
-  <button onclick="insertFunctionHere()">Clear DB</button>
+
+  <button id="clearButton">Clear DB</button>
+
 
 </body>
 </html>
