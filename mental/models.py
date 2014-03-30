@@ -10,4 +10,3 @@ class UserProfile(models.Model):
 class Voltage(models.Model):
     voltage = models.IntegerField(default=0)
     user = models.ForeignKey(UserProfile)
-

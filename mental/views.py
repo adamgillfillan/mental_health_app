@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.template import RequestContext
 from django.shortcuts import render_to_response
-from mental.models import UserProfile
+from mental.models import UserProfile, Voltage
 
 
 # Create your views here.
@@ -20,6 +20,20 @@ def users(request):
     return render_to_response('mental/users.html', context_dict, context)
 
 
+def voltage(request):
+    context = RequestContext(request)
+
+    voltage_list = get_voltage_list()
+
+    context_dict = {'voltage_list': voltage_list}
+    return render_to_response('mental/voltages.html', context_dict, context)
+
+
 def get_user_list():
     user_list = UserProfile.objects.all()
     return user_list
+
+
+def get_voltage_list():
+    voltage_list = Voltage.objects.all()
+    return voltage_list
