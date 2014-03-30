@@ -4,16 +4,16 @@
     <title></title>
 </head>
 <body>
-    <h1>{{ uer_name }}</h1>
+    <h1>{{ user_name }}</h1>
 
     {% if voltages %}
     <ul>
         {% for voltage in voltages %}
-        <li>Voltage: {{ voltage.voltage}}, Username: {{ voltage.user.name}}, Email: {{ voltage.user.email }}</li>
+        <li>Voltage: {{ voltage.voltage }}, Username: {{ voltage.user.name }}, Email: {{ voltage.user.email }}</li>
         {% endfor %}
     </ul>
     {% else %}
-        <strong>No pages currently in category.</strong>
+        <strong>No voltages currently in category.</strong>
     {% endif %}
 </body>
 </html>

@@ -49,15 +49,8 @@ def user(request, user_name_url):
     context_dict['user_list'] = user_list
 
     try:
-        # Can we find a category with the given name?
-        # If we can't, the .get() method raises a DoesNotExist exception.
-        # So the .get() method returns one model instance or raises an exception.
         my_user = UserProfile.objects.get(name=user_name)
-
-
-        # Retrieve all of the associated pages.
-        # Note that filter returns >= 1 model instance.
-        voltages = Voltage.objects.filter(UserProfile=my_user)
+        voltages = Voltage.objects.filter(user=my_user)
         voltages_list = voltages.order_by('-voltages')
 
         # Adds our results list to the template context under name pages.
