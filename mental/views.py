@@ -2,6 +2,7 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from mental.models import UserProfile, Voltage
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 import random
 import datetime
 import time
@@ -53,6 +54,9 @@ def addvoltages(request):
         v.save()
     return HttpResponse('Data added')
 
+def cleardb(request):
+    Voltage.objects.all().delete()
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 #
 # def user(request, user_name_url):

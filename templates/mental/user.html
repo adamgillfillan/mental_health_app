@@ -186,7 +186,9 @@ function create_voltages() {
 {#        <strong>No voltages currently in category.</strong>#}
 {#    {% endif %}#}
 
-  <button id="clearButton">Clear DB</button>
+  <form action="/mental/cleardb/" method="post">
+  <button type="submit">Clear DB</button>
+  </form>
 
 
 </body>
