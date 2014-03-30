@@ -47,7 +47,9 @@ def get_voltage_list():
 def addvoltages(request):
     if (request.method == "POST"):
         print(request.POST)
-        v = Voltage(voltage = request.POST['voltages'], user = get_user_list()[0])
+        mytime = int(time.time())
+        print(mytime)
+        v = Voltage(voltage = request.POST['voltages'], user = get_user_list()[0], time = mytime)
         v.save()
     return HttpResponse('Data added')
 
