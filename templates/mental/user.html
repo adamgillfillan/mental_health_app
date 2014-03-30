@@ -33,6 +33,13 @@ body {
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+
+button{
+
+  background: #FF0000;
+  color: #FFF;
+
+}
 </style>
 <body>
     <h1>{{ user_name }}</h1>
@@ -105,6 +112,9 @@ body {
         {% endfor %}
         return my_voltages
     }
+
+
+
 </script>
 {#    <script>/*These lines are all chart setup.  Pick and choose which chart features you want to utilize. */#}
 {#nv.addGraph(function() {#}
@@ -166,6 +176,8 @@ function create_voltages() {
 {#    {% else %}#}
 {#        <strong>No voltages currently in category.</strong>#}
 {#    {% endif %}#}
+  <button onclick="insertFunctionHere()">Clear DB</button>
+
 </body>
 </html>
 
