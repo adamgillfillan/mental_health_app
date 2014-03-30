@@ -7,4 +7,5 @@ urlpatterns = patterns(
     '',
     url(r'^$', views.index, name='index'),
     url(r'^users', views.users, name='users'),
+    url(r'^voltages', views.voltages, name='voltages'),
 )

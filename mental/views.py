@@ -20,7 +20,7 @@ def users(request):
     return render_to_response('mental/users.html', context_dict, context)
 
 
-def voltage(request):
+def voltages(request):
     context = RequestContext(request)
 
     voltage_list = get_voltage_list()
