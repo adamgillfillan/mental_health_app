@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65692abb-4482-4786-a08c-ff0db0727365" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental/client.py" afterPath="$PROJECT_DIR$/mental/client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/mental/user.html" afterPath="$PROJECT_DIR$/templates/mental/user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mental/views.py" afterPath="$PROJECT_DIR$/mental/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mental_health.iws" />
@@ -32,7 +33,16 @@
       <file leaf-file-name="populate_user_profiles.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/populate_user_profiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="22" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1020">
+            <state line="21" column="22" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1020">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mental/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="24" selection-start="188" selection-end="188" vertical-scroll-proportion="-3.9230769" vertical-offset="85" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -42,6 +52,33 @@
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mental/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="15" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mental/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="24" selection-start="1250" selection-end="1250" vertical-scroll-proportion="-0.124681935" vertical-offset="814" max-vertical-offset="1207">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mental/users.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="6" selection-start="379" selection-end="379" vertical-scroll-proportion="-3.3461537" vertical-offset="100" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
@@ -60,42 +97,6 @@
         <entry file="file://$PROJECT_DIR$/mental/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mental/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="748">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="voltages.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/mental/voltages.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mental/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="36" selection-start="239" selection-end="239" vertical-scroll-proportion="0.3469388" vertical-offset="0" max-vertical-offset="588">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mental/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
               <folding />
             </state>
           </provider>
@@ -143,10 +144,11 @@
         <option value="$PROJECT_DIR$/populate_user_profiles.py" />
         <option value="$PROJECT_DIR$/mental/models.py" />
         <option value="$PROJECT_DIR$/templates/mental/users.html" />
-        <option value="$PROJECT_DIR$/mental/urls.py" />
-        <option value="$PROJECT_DIR$/mental/views.py" />
         <option value="$PROJECT_DIR$/templates/mental/voltages.html" />
         <option value="$PROJECT_DIR$/mental/client.py" />
+        <option value="$PROJECT_DIR$/mental/urls.py" />
+        <option value="$PROJECT_DIR$/mental/views.py" />
+        <option value="$PROJECT_DIR$/templates/mental/user.html" />
       </list>
     </option>
   </component>
@@ -206,6 +208,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mental_health" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental_health" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental_health" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mental" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,13 +595,22 @@
       <created>1396150681687</created>
       <updated>1396150681687</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="updated client">
+      <created>1396150948135</created>
+      <updated>1396150948135</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added user view and template">
+      <created>1396155180645</created>
+      <updated>1396155180645</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -591,13 +620,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31758958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31758958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33666667" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -630,19 +658,14 @@
     <MESSAGE value="error on voltages" />
     <MESSAGE value="works now" />
     <MESSAGE value="added client" />
-    <option name="LAST_COMMIT_MESSAGE" value="added client" />
+    <MESSAGE value="updated client" />
+    <MESSAGE value="added user view and template" />
+    <option name="LAST_COMMIT_MESSAGE" value="added user view and template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mental/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="50" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mental/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="748">
@@ -930,41 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mental/users.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mental/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="50" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mental/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mental/voltages.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mental/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnalogInOutSerial.ino">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="517">
@@ -979,16 +967,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/populate_user_profiles.py">
+    <entry file="file://$PROJECT_DIR$/mental/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="22" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1020">
+        <state line="13" column="28" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mental/client.py">
+    <entry file="file://$PROJECT_DIR$/templates/mental/users.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="239" selection-end="239" vertical-scroll-proportion="0.3469388" vertical-offset="0" max-vertical-offset="588">
+        <state line="11" column="6" selection-start="379" selection-end="379" vertical-scroll-proportion="-3.3461537" vertical-offset="100" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_user_profiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="22" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mental/voltages.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="112" selection-start="483" selection-end="579" vertical-scroll-proportion="-5.9615383" vertical-offset="83" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mental/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="41" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mental/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="15" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mental/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="188" selection-end="188" vertical-scroll-proportion="-3.9230769" vertical-offset="85" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mental/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="24" selection-start="1250" selection-end="1250" vertical-scroll-proportion="-0.124681935" vertical-offset="814" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
