@@ -47,6 +47,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mental',
+    'django_nvd3'
 )
 
 MIDDLEWARE_CLASSES = (
