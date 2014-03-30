@@ -3,61 +3,49 @@ import os
 import random
 
 
-def add_user(name, email, voltage):
-    user = UserProfile.objects.get_or_create(name=name, email=email, voltage=voltage)[0]
+def add_user(name, email):
+    user = UserProfile.objects.get_or_create(name=name, email=email)[0]
 
     return user
 
 
-def add_voltage(voltage):
-    this_voltage = Voltage.objects.get_or_create(voltage=voltage)[0]
+def add_voltage(voltage, user):
+    this_voltage = Voltage.objects.get_or_create(voltage=voltage, user=user)[0]
 
     return this_voltage
 
 
-def add_many_voltages():
-    my_array = []
+def add_many_voltages(user):
+    x = random.randrange(100)
+    new_voltage = add_voltage(x, user)
 
-    for i in range(100):
-        x = random.randrange(100)
-        new_voltage = add_voltage(x)
-        my_array.append(new_voltage)
-
-    return my_array
-
-
-def add_many_users(voltages):
-    my_users = []
-
-    for i in range(len(voltages)):
-        user_collin = add_user('Collin', 'cyborg@ut.edu', voltages[i])
-        user_marc = add_user('Marc', 'markyMark@ncsu.edu', voltages[i])
-        user_sharon = add_user('Sharon', 'sharon@unc.edu', voltages[i])
-        user_adam = add_user('Adam', 'ballin@ncsu.edu', voltages[i])
-        my_users.append(user_collin)
-        my_users.append(user_marc)
-        my_users.append(user_sharon)
-        my_users.append(user_adam)
-
-    return my_users
+    return new_voltage
 
 
 def populate():
+    collin = add_user("Collin", "cyborg@ut.edu")
+    marc = add_user("Marc", "marcyMarc@ncsu.edu")
+    sharon = add_user("Sharon", "sharon@unc.edu")
+    adam = add_user("Adam", "baller@ncsu.edu")
 
-    my_voltages = add_many_voltages()
-    add_many_users(my_voltages)
+    for i in range(100):
+        add_many_voltages(collin)
+        add_many_voltages(marc)
+        add_many_voltages(sharon)
+        add_many_voltages(adam)
 
-    #Print out all users
+    # Print out all users
     for user in UserProfile.objects.all():
-        print("Name: {0}, Email: {1}, Voltage: {2}".format(
+        print("Name: {0}, Email: {1}".format(
             user.name,
             user.email,
-            user.voltage.voltage
         ))
 
     for voltage in Voltage.objects.all():
-        print("Voltage: {0}".format(
+        print("Voltage: {0}, User: {1}, User Email: {2}".format(
             voltage.voltage,
+            voltage.user.name,
+            voltage.user.email
         ))
 
 # Start execution here!
