@@ -9,7 +9,7 @@
     {% if voltages %}
     <ul>
         {% for voltage in voltages %}
-        <li>Voltage: {{ voltage.voltage }}, Username: {{ voltage.user.name }}, Email: {{ voltage.user.email }}</li>
+        <li>Voltage: {{ voltage.voltage }}, Username: {{ voltage.user.name }}, Email: {{ voltage.user.email }}, Date: {{ voltage.time }}</li>
         {% endfor %}
     </ul>
     {% else %}

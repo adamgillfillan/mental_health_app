@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from mental.models import UserProfile, Voltage
@@ -53,28 +52,18 @@ def addvoltages(request):
 def user(request, user_name_url):
     context = RequestContext(request)
 
-    user_name = user_name_url.replace('_', ' ')
+    user_name = user_name_url
     context_dict = {'user_name': user_name,
                     'user_name_url': user_name_url}
     user_list = get_user_list()
     context_dict['user_list'] = user_list
 
-    try:
-        my_user = UserProfile.objects.get(name=user_name)
-        voltages = Voltage.objects.filter(user=my_user)
-        voltages_list = voltages.order_by('-voltages')
+    my_user = UserProfile.objects.get(name=user_name)
+    voltages = Voltage.objects.filter(user=my_user)
+    voltages_list = voltages
 
-        # Adds our results list to the template context under name pages.
-        context_dict['voltages'] = voltages_list
-
-        # We also add the category object from the database to the context dictionary.
-        # We'll use this in the template to verify that the category exists.
-        context_dict['user'] = my_user
-
-    except UserProfile.DoesNotExist:
-        # We get here if we didn't find the specified category.
-        # Don't do anything - the template displays the "no category" message for us.
-        pass
+    context_dict['voltages'] = voltages_list
+    context_dict['user'] = my_user
 
     # Go render the response and return it to the client.
     return render_to_response('mental/user.html', context_dict, context)

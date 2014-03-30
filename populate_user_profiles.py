@@ -9,15 +9,18 @@ def add_user(name, email):
     return user
 
 
-def add_voltage(voltage, user):
-    this_voltage = Voltage.objects.get_or_create(voltage=voltage, user=user)[0]
+def add_voltage(voltage, user, time):
+    this_voltage = Voltage.objects.get_or_create(voltage=voltage, user=user, time=time)[0]
 
     return this_voltage
 
 
 def add_many_voltages(user):
     x = random.randrange(100)
-    new_voltage = add_voltage(x, user)
+    minutes = random.randrange(60)
+    time = " 14:" + str(minutes) + ":59"
+    new_time = '2014-03-30' + time
+    new_voltage = add_voltage(x, user, new_time)
 
     return new_voltage
 
@@ -45,7 +48,8 @@ def populate():
         print("Voltage: {0}, User: {1}, User Email: {2}".format(
             voltage.voltage,
             voltage.user.name,
-            voltage.user.email
+            voltage.user.email,
+            voltage.time,
         ))
 
 # Start execution here!

@@ -10,4 +10,4 @@ urlpatterns = patterns(
     url(r'^voltages', views.voltages, name='voltages'),
     url(r'^user/(?P<user_name_url>\w+)/$', views.user, name='user'),
     url(r'^addvoltages', views.addvoltages),
-)
+    )
