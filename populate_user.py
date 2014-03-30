@@ -5,13 +5,11 @@ import random
 
 def add_user(name, email):
     user = UserProfile.objects.get_or_create(name=name, email=email)[0]
-
     return user
 
 
 def populate():
     add_user("Collin", "cyborg@ut.edu")
-    # Print out all users
     for user in UserProfile.objects.all():
         print("Name: {0}, Email: {1}".format(
             user.name,
