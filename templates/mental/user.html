@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="{% static '../static/css/bootstrap.css' %}" />
 <script type="text/javascript" src='{% static 'd3/d3.min.js' %}'></script>
 <script type="text/javascript" src='{% static 'nvd3/nv.d3.min.js' %}'></script>
+<meta http-equiv="refresh" content="5" />
 
 <head>
     <title></title>
@@ -155,15 +156,16 @@ function create_voltages() {
 {#};#}
 {#    #}
 {#    </script>#}
-    <div id="chart"></div>
-    {% if voltages %}
-    <ul>
-        {% for voltage in voltages %}
-        <li>Voltage: {{ voltage.voltage }}, Username: {{ voltage.user.name }}, Email: {{ voltage.user.email }}, Date: {{ voltage.time }}</li>
-        {% endfor %}
-    </ul>
-    {% else %}
-        <strong>No voltages currently in category.</strong>
-    {% endif %}
+{#    <div id="chart"></div>#}
+{#    {% if voltages %}#}
+{#    <ul>#}
+{#        {% for voltage in voltages %}#}
+{#        <li>Voltage: {{ voltage.voltage }}, Username: {{ voltage.user.name }}, Email: {{ voltage.user.email }}, Date: {{ voltage.time }}</li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{#    {% else %}#}
+{#        <strong>No voltages currently in category.</strong>#}
+{#    {% endif %}#}
 </body>
 </html>
+
