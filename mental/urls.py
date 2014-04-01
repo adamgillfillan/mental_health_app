@@ -11,4 +11,5 @@ urlpatterns = patterns(
     url(r'^user/(?P<user_name_url>\w+)/$', views.user, name='user'),
     url(r'^addvoltages', views.addvoltages),
     url(r'^cleardb', views.cleardb),
+    url(r'^keylog', views.keylog),
     )

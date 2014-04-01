@@ -58,6 +58,13 @@ def cleardb(request):
     Voltage.objects.all().delete()
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
+def keylog(request):
+    lines = request.body.split()
+    for i in range(0, len(lines)):
+        lines[i] = lines[i].decode("utf-8")  
+    print(lines)
+    return HttpResponse('Data added')
+
 #
 # def user(request, user_name_url):
 #     context = RequestContext(request)
